@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kmm-filesystem"
 include(":kmm-filesystem")
+includeBuild("convention-plugins")
