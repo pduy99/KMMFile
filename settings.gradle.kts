@@ -1,17 +1,18 @@
 pluginManagement {
     repositories {
+        mavenCentral()
         google()
         gradlePluginPortal()
-        mavenCentral()
     }
 }
 
 dependencyResolutionManagement {
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
     }
 }
 
-rootProject.name = "KMMFile"
-include(":shared")
+rootProject.name = "kmm-filesystem"
+include(":kmm-filesystem")

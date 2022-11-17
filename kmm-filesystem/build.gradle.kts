@@ -4,6 +4,13 @@ plugins {
     id("com.android.library")
 }
 
+group = "io.github.pduy99"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+}
+
 kotlin {
     android()
     iosX64()
@@ -11,12 +18,12 @@ kotlin {
     iosSimulatorArm64()
 
     cocoapods {
-        summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
+        summary = "Kotlin Multiplatform library for File System"
+        homepage = "https://github.com/pduy99/KMMFile"
         version = "1.0"
         ios.deploymentTarget = "14.1"
         framework {
-            baseName = "shared"
+            baseName = "kmm-filesystem"
         }
     }
     
